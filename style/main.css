@@ -11,7 +11,7 @@
   --color5: #4a793e;
   --colorBlack: #00030c;
   --colorWhite: #fff;
-  --colorGray1: #cccccc50;
+  --colorGray1: #cccccc70;
   --colorGray2: #666;
 
   --linearGrad: #d9ffc8, #b5dda6, #92bc83, #6e9a61, #4a793e;
@@ -29,24 +29,33 @@ body {
   animation: bg-moving 10s ease-in-out infinite;
 }
 
+p {
+  font-size: 16px;
+}
+
 
 /* main */
 main {
 
 }
 
-/* login area css */
-.login_header {
-  padding: 2em;
-  background-color: var(--colorBlack);
+/* header */
+header {
+  padding: 1.5em;
+  background-color: var(--colorGray1);
+  border-radius: 0 0 2em 2em;
   display: flex;
   justify-content: left;
   align-items: center;
 }
 
-.login_header > a > span {
-  font-size: 48px;
-  color: var(--colorWhite);
+header > a > span {  
+  color: var(--colorBlack);
+  transition: all .3s ease-in-out;
+}
+
+header > a > span:hover {
+  transform: scale(1.2);
 }
 
 /* animations */
