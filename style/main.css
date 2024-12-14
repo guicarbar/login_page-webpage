@@ -1,6 +1,7 @@
 /* import the reset.css */
 @import url(reset.css);
 
+
 /* root */
 :root {
   --color1: #d9ffc8;
@@ -10,22 +11,43 @@
   --color5: #4a793e;
   --colorBlack: #00030c;
   --colorWhite: #fff;
-  --colorGray1: #ccc;
+  --colorGray1: #cccccc50;
   --colorGray2: #666;
 
   --linearGrad: #d9ffc8, #b5dda6, #92bc83, #6e9a61, #4a793e;
 }
 
+
 /* global modifiers */
 body {
   height: 100vh;
-  width: 100vw;
+  font-family: 'Times New Roman', Times, serif;
   background-image: linear-gradient(135deg, var(--linearGrad));
-  background-size: 300%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 200%;
   animation: bg-moving 10s ease-in-out infinite;
 }
 
 
+/* main */
+main {
+
+}
+
+/* login area css */
+.login_header {
+  padding: 2em;
+  background-color: var(--colorBlack);
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.login_header > a > span {
+  font-size: 48px;
+  color: var(--colorWhite);
+}
 
 /* animations */
 /* bg animation */
