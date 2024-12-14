@@ -1,0 +1,16 @@
+/* import the reset.css */
+@import url(reset.css);
+
+/* root */
+:root {
+  --color1: #d9ffc8;
+  --color2: #b5dda6;
+  --color3: #92bc83;
+  --color4: #6e9a61;
+  --color5: #4a793e;
+  --colorBlack: #00030c;
+  --colorWhite: #fff;
+  --colorGray1: #ccc;
+  --colorGray2: #666;
+}
+
