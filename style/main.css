@@ -56,14 +56,21 @@ header {
   align-items: center;
 }
 
-header > a > span {  
+header > a > i {
+  font-size: 48px;
   color: var(--colorBlack);
   transition: all .3s ease-in-out;
 }
 
-header > a > span:hover {
-  transform: scale(1.1);
+
+/* login css area */
+.login_form {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
 }
+
 
 /* animations */
 /* bg animation */
