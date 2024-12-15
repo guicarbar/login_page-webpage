@@ -1,6 +1,9 @@
 /* import the reset.css */
 @import url(reset.css);
 
+/* import the font to the goggle fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100..700&display=swap');
+
 
 /* root */
 :root {
@@ -21,7 +24,6 @@
 /* global modifiers */
 body {
   height: 100vh;
-  font-family: 'Times New Roman', Times, serif;
   background-image: linear-gradient(135deg, var(--linearGrad));
   background-repeat: no-repeat;
   background-size: cover;
@@ -29,6 +31,11 @@ body {
   animation: bg-moving 10s ease-in-out infinite;
 }
 
+* {
+  font-family: "Roboto Mono", serif;
+}
+
+/* global css text */
 p {
   font-size: 16px;
 }
@@ -55,7 +62,7 @@ header > a > span {
 }
 
 header > a > span:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 /* animations */
