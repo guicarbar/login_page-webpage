@@ -21,6 +21,9 @@
   flex-flow: column nowrap;
   justify-content: space-between;
   gap: 3em;
+
+  /* temp */
+  display: none;
 }
 
 .login_main > div:nth-child(1) > h1 {

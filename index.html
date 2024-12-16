@@ -13,7 +13,7 @@
 <!-- title of page -->
   <title>Login screen</title>
 </head>
-<body>
+<body onload="initOptions()">
   <header>
     <a href="https://github.com/guicarbar" title="Voltar"><i class="bi bi-arrow-left"></i></a>
   </header>
@@ -35,9 +35,9 @@
           <input type="email" id="username" placeholder="Digite seu email.">
         </label>
 
-        <label for="password" class="login_form_password">
+        <label for="password-l" class="login_form_password">
           <i class="bi bi-key"></i>
-          <input type="password" id="password" placeholder="Digite sua senha.">
+          <input type="password" id="password-l" placeholder="Digite sua senha.">
         </label>
 
         <label for="checkbox" class="login_form_checkbox">
@@ -67,8 +67,63 @@
 
       <!-- form create account area -->
       <form>
-        
+        <label for="f-name">
+          Nome: <input type="text">
+        </label>
+
+        <label for="l-name">
+          Sobrenome: <input type="text">
+        </label>
+
+        <label for="email">
+          email: <input type="email" id="email">
+        </label>
+
+        <label for="password-c-1">
+          senha: <input type="password" id="password-c-1">
+        </label>
+
+        <label for="password-c-2">
+          Repetir a senha: <input type="password" id="password-c-2">
+        </label>
+
+        <div class="form_gender_radio">
+          <label for="gender-m">
+            <input type="radio" name="gender" required>
+            Masculino
+          </label>
+  
+          <label for="gender-m">
+            <input type="radio" name="gender">
+            Feminino
+          </label>
+        </div>
+
+        <div class="fomr_nasc_select">
+          <label>Data de nascimento:</label>
+          <!-- dia -->
+          <select name="day" id="day" required>
+            <option selected disabled>Dia</option>
+          </select>
+
+          <!-- mes -->
+          <select name="mounth" id="mounth" required>
+            <option selected disabled>Mês</option>
+          </select>
+
+          <!-- ano -->
+          <select name="year" id="year" required>
+            <option selected disabled>Ano</option>
+          </select>
+        </div>
+
+        <input type="submit" value="Cadastrar">
       </form>
+
+      <label>
+        Possui cadastro?
+        <button class="btn_login">Clique aqui!</button>
+      </label>
     </div>
 
     <!-- Footer -->

@@ -104,6 +104,10 @@ main {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
+
+
+  /* temp main */
+  height: 100vh;
 }
 
 main > div {
