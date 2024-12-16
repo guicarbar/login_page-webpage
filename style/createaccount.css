@@ -1,3 +1,19 @@
+/* root */
+:root {
+  --color1: #d9ffc8;
+  --color2: #b5dda6;
+  --color3: #92bc83;
+  --color4: #6e9a61;
+  --color5: #4a793e;
+  --colorBlack: #00030c;
+  --colorWhite: #fff;
+  --colorGray1: #cccccc70;
+  --colorGray2: #666;
+  --colorShadow: #00030c70;
+
+  --linearGrad: #d9ffc8, #b5dda6, #92bc83, #6e9a61, #4a793e;
+}
+
 /* create account area */
 .createaccount_main {
   display: flex;
@@ -38,4 +54,67 @@
 .btn_login:hover {
   border: 1px solid var(--color5);
   border-radius: 32px;
+}
+
+.createaccount_form {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: self-start;
+}
+
+.createaccount_form > label {
+  display: flex;
+  flex-flow: column nowrap;
+  font-weight: 700;
+  color: var(--colorGray2);
+}
+
+.createaccount_form > label > input {
+  margin: .6em 0 2em;
+  padding: .8em 1em;
+  border-radius: 16px;
+  border: none;
+  background-color: var(--color3);
+}
+
+.createaccount_form > label > input:focus {
+  outline: none;
+}
+
+.form_gender_radio {
+  width: 100%;
+  padding: .8em 1em 2em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.fomr_nasc_select {
+  width: 100%;
+  padding: .8em 0em 2.6em;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+
+.accountcreate_form_submit {
+  padding: .8em 1.8em;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--colorGray2);
+  background-color: transparent;
+  border: 1px solid transparent;
+  transition: all .3s ease;
+  align-self: center;
+}
+
+.accountcreate_form_submit:hover {
+  border: 1px solid var(--color5);
+  border-radius: 32px;
+  background-color: var(--color5);
+  color: var(--colorWhite);
+  text-decoration: underline;
+}
+
+.password_form_area > input:nth-child(1){
+  margin: .8em 0em .6em;
 }

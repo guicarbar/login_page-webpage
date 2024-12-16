@@ -67,39 +67,39 @@
       </div>
 
       <!-- form create account area -->
-      <form>
+      <form class="createaccount_form">
         <label for="f-name">
-          Nome: <input type="text" placeholder="Digite seu nome.">
+          Qual seu primeiro nome? <input type="text" placeholder="Digite seu nome.">
         </label>
 
         <label for="l-name">
-          Sobrenome: <input type="text" placeholder="digite seu Sobrenome.">
+          Qual seu sobrenome? <input type="text" placeholder="Digite seu Sobrenome.">
         </label>
 
         <label for="email">
-          email: <input type="email" id="email" placeholder="Digite seu email.">
+          Qual e-mail será usado? <input type="email" id="email" placeholder="Digite seu email.">
         </label>
 
-        <label>
-          Senha: 
+        <label class="password_form_area">
+          Qual a senha? Duas vezes.
           <input type="password" placeholder="Digite sua senha.">
-          <input type="password" placeholder="Repita a senha.">
+          <input type="password" placeholder="Repita a mesma senha.">
         </label>
 
         <label for="form_gender_radio">Qual seu genero?</label>
         <div class="form_gender_radio">
           <label for="gender-m">
-            <input type="radio" name="gender" required>
+            <input type="radio" name="gender" id="gender-m" required>
             Masculino
           </label>
   
-          <label for="gender-m">
-            <input type="radio" name="gender">
+          <label for="gender-f">
+            <input type="radio" name="gender" id="gender-f">
             Feminino
           </label>
         </div>
 
-        <label for="fomr_nasc_select">Data de nascimento:</label>
+        <label for="fomr_nasc_select">E o dia do seu nascimento?</label>
         <div class="fomr_nasc_select">
           <!-- dia -->
           <select name="day" id="day" required>
@@ -117,7 +117,7 @@
           </select>
         </div>
 
-        <input type="submit" value="Cadastrar">
+        <input type="submit" value="Cadastrar" class="accountcreate_form_submit">
       </form>
 
       <label>

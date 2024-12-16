@@ -7,7 +7,7 @@ function generatSelectionOptions(min, max, locate) {
     select.appendChild(option)
   }
 
-  console.log("deu certo o do:" + locate)
+  console.log("deu certo o do: " + locate)
 }
 
 function initOptions() {
