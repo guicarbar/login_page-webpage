@@ -69,25 +69,24 @@
       <!-- form create account area -->
       <form>
         <label for="f-name">
-          Nome: <input type="text">
+          Nome: <input type="text" placeholder="Digite seu nome.">
         </label>
 
         <label for="l-name">
-          Sobrenome: <input type="text">
+          Sobrenome: <input type="text" placeholder="digite seu Sobrenome.">
         </label>
 
         <label for="email">
-          email: <input type="email" id="email">
+          email: <input type="email" id="email" placeholder="Digite seu email.">
         </label>
 
-        <label for="password-c-1">
-          senha: <input type="password" id="password-c-1">
+        <label>
+          Senha: 
+          <input type="password" placeholder="Digite sua senha.">
+          <input type="password" placeholder="Repita a senha.">
         </label>
 
-        <label for="password-c-2">
-          Repetir a senha: <input type="password" id="password-c-2">
-        </label>
-
+        <label for="form_gender_radio">Qual seu genero?</label>
         <div class="form_gender_radio">
           <label for="gender-m">
             <input type="radio" name="gender" required>
@@ -100,8 +99,8 @@
           </label>
         </div>
 
+        <label for="fomr_nasc_select">Data de nascimento:</label>
         <div class="fomr_nasc_select">
-          <label>Data de nascimento:</label>
           <!-- dia -->
           <select name="day" id="day" required>
             <option selected disabled>Dia</option>
