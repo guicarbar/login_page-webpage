@@ -77,8 +77,22 @@ footer {
   position: fixed;
   bottom: 0;
   left: 0;
-  padding: 2em;
+  padding: 3em;
   background-color: var(--colorBlack);
+}
+
+footer > a {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  color: var(--colorGray2);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+footer > a:hover {
+  text-decoration: underline;
 }
 
 
