@@ -40,28 +40,19 @@ p {
   font-size: 16px;
 }
 
-
-/* main */
-main {
-  height: 100vh;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-between;
-}
-
-main > div {
-  margin: 0 1em;
-  padding: 2em;
-  background-color: var(--colorGray1);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  border-radius: 32px;
-  box-shadow: 0 8px 32px var(--colorShadow);
+h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--color5);
 }
 
 
 /* header */
 header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
   padding: 1.5em;
   background-color: var(--colorGray1);
   backdrop-filter: blur(8px);
@@ -75,17 +66,104 @@ header {
 
 header > a > i {
   font-size: 48px;
-  color: var(--colorBlack);
+  color: var(--colorGray2);
   transition: all .3s ease-in-out;
 }
 
 
-/* login css area */
-.login_form {
+/* footer */
+footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 2em;
+  background-color: var(--colorBlack);
+}
+
+
+/* main */
+main {
+  height: 100vh;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
+}
+
+main > div {
+  margin: 0 1em;
+  padding: 3em 1.5em;
+  background-color: var(--colorGray1);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 32px;
+  box-shadow: 0 8px 32px var(--colorShadow);
+}
+
+
+/* login css area */
+.login_main {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  gap: 3em;
+}
+
+.login_main > div:nth-child(1) > h1 {
+  margin-bottom: .5em;
+}
+
+.login_main > div:nth-child(1) > p {
+  color: var(--colorGray2);
+  text-align: left;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.login_main > div:nth-child(3) {
+  display: flex;
+  flex-flow: column;
   align-items: center;
+  gap: .6em;
+}
+
+.login_main > div:nth-child(3) > a {
+  color: var(--color5);
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.login_main > div:nth-child(3) > a:hover {
+  text-decoration: underline;
+}
+
+.btn_createaccount {
+  background-color: transparent;
+  padding: .5em .4em;
+  border: 1px solid transparent;
+  font-size: 20px;
+  color: var(--color5);
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.btn_createaccount:hover {
+  border: 1px solid var(--color5);
+  border-radius: 32px;
+}
+
+.login_form {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+/* create account area */
+.createaccount_main {
+  display: none;
 }
 
 
