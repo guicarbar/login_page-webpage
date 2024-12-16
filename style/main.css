@@ -8,6 +8,8 @@
 
 /* imports of components */
 @import url(login.css);
+@import url(createaccount.css);
+
 
 /* root */
 :root {
@@ -99,7 +101,6 @@ footer > a:hover {
 
 /* main */
 main {
-  height: 100vh;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -116,12 +117,6 @@ main > div {
 }
 
 
-/* create account area */
-.createaccount_main {
-  display: none;
-}
-
-
 /* animations */
 /* bg animation */
 @keyframes bg-moving {
@@ -135,3 +130,4 @@ main > div {
     background-position: 0 0;
   }
 }
+
