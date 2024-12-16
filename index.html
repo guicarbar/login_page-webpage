@@ -14,12 +14,12 @@
   <title>Login screen</title>
 </head>
 <body>
+  <header>
+    <a href="#" title="Voltar"><i class="bi bi-arrow-left"></i></a>
+  </header>
+
 <!-- main page -->
   <main>
-    <header>
-      <a href="#" title="Voltar"><i class="bi bi-arrow-left"></i></a>
-    </header>
-
     <!-- login area -->
     <div class="login_main">
       <!-- title login area -->
@@ -30,22 +30,22 @@
       
       <!-- form de login -->
       <form class="login_form">
-        <label for="username">
+        <label for="username" class="login_form_username">
           <i class="bi bi-person"></i>
-          <input type="email" id="username">
+          <input type="email" id="username" placeholder="Digite seu email.">
         </label>
 
-        <label for="password">
+        <label for="password" class="login_form_password">
           <i class="bi bi-key"></i>
-          <input type="password" id="password">
+          <input type="password" id="password" placeholder="Digite sua senha.">
         </label>
 
-        <label for="checkbox">
+        <label for="checkbox" class="login_form_checkbox">
           <input type="checkbox" id="checkbox">
           Lembrar de mim por 30 dias?
         </label>
 
-        <input type="submit" value="Entrar">
+        <input type="submit" value="Entrar" class="login_form_submit">
       </form>
 
       <div>
@@ -63,10 +63,11 @@
     </div>
 
     <!-- Footer -->
-    <footer>
-      <a href="https://github.com/guicarbar" title="Meu GitHub"><i class="bi bi-c-circle"></i>Guilherme Carvalho</a>
-    </footer>
   </main>
+
+  <footer>
+    <a href="https://github.com/guicarbar" title="Meu GitHub"><i class="bi bi-c-circle"></i>Guilherme Carvalho</a>
+  </footer>
 
 <!-- js -->
   <script src="script/core.js" defer></script>

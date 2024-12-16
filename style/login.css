@@ -1,3 +1,20 @@
+/* root */
+:root {
+  --color1: #d9ffc8;
+  --color2: #b5dda6;
+  --color3: #92bc83;
+  --color4: #6e9a61;
+  --color5: #4a793e;
+  --colorBlack: #00030c;
+  --colorWhite: #fff;
+  --colorGray1: #cccccc70;
+  --colorGray2: #666;
+  --colorShadow: #00030c70;
+
+  --linearGrad: #d9ffc8, #b5dda6, #92bc83, #6e9a61, #4a793e;
+}
+
+
 /* login css area */
 .login_main {
   display: flex;
@@ -50,15 +67,43 @@
   border-radius: 32px;
 }
 
+/* login form */
 .login_form {
   display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-between;
+  flex-flow: column nowrap; 
   align-items: center;
 }
 
+.login_form > label > i {
+  font-size: 32px;
 
-/* create account area */
-.createaccount_main {
-  display: none;
+}
+
+.login_form_username, .login_form_password {
+  padding: .6em;
+  background-color: var(--color3);
+  display: flex;
+  justify-content: center;
+  gap: .8em;
+  border-radius: 16px;
+}
+
+.login_form_username > input, .login_form_password > input {
+  background-color: transparent;
+  border: 1px solid transparent;
+}
+
+.login_form_username > input:focus, .login_form_password > input:focus {
+  border-bottom: 1px solid var(--colorGray2);
+}
+
+.login_form_password {
+  margin: 1em 0;
+}
+
+.login_form_checkbox {
+  color: var(--colorGray2);
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 1em;
 }

@@ -53,10 +53,10 @@ h1 {
 
 /* header */
 header {
+  z-index: 1;
   width: 100%;
-  position: fixed;
+  position: sticky;
   top: 0;
-  left: 0;
   padding: 1.5em;
   background-color: var(--colorGray1);
   backdrop-filter: blur(8px);
@@ -78,9 +78,6 @@ header > a > i {
 /* footer */
 footer {
   width: 100%;
-  position: fixed;
-  bottom: 0;
-  left: 0;
   padding: 3em;
   background-color: var(--colorBlack);
 }
@@ -116,6 +113,12 @@ main > div {
   -webkit-backdrop-filter: blur(8px);
   border-radius: 32px;
   box-shadow: 0 8px 32px var(--colorShadow);
+}
+
+
+/* create account area */
+.createaccount_main {
+  display: none;
 }
 
 
