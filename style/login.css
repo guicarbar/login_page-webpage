@@ -23,7 +23,7 @@
   gap: 3em;
 
   /* temp */
-  display: none;
+  display: ;
 }
 
 .login_main > div:nth-child(1) > h1 {
@@ -53,6 +53,17 @@
 
 .login_main > div:nth-child(3) > a:hover {
   text-decoration: underline;
+}
+
+.login_main > div:nth-child(3) > label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .6em;
+}
+
+.login_main > div:nth-child(3) > label > p {
+  font-size: 14px;
 }
 
 .btn_createaccount {
