@@ -1,10 +1,8 @@
 /* import the reset.css */
 @import url(reset.css);
 
-
 /* import the font to the goggle fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100..700&display=swap');
-
 
 /* imports of components */
 @import url(login.css);
@@ -130,3 +128,24 @@ main > div {
   }
 }
 
+
+/* typical diveces  */
+@media only screen and (max-width: 600px) {
+
+}
+
+@media only screen and (min-width: 600px) {
+
+}
+
+@media only screen and (min-width: 768px) {
+
+}
+
+@media only screen and (min-width: 992px) {
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+}
