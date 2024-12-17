@@ -22,7 +22,7 @@
 <!-- main page -->
   <main>
     <!-- login area -->
-    <div class="login_main">
+    <div class="login_main" id="loginArea" style="display: flex;">
       <!-- title login area -->
       <div>
         <h1>Olá! Tudo bem?</h1>
@@ -53,13 +53,13 @@
         <a href="#" title="Recupere sua senha aqui.">Esqueceu a senha?</a>
         <label>
           <p>Primeira vez?</p>
-          <button class="btn_createaccount">Clique aqui!</button>
+          <button class="btn_createaccount" onclick="change()">Clique aqui!</button>
         </label>
       </div>
     </div>
 
     <!-- create a count area -->
-    <div class="createaccount_main">
+    <div class="createaccount_main" id="createAccountArea" style="display: none;">
       <!-- title create a account area -->
       <div>
         <h1>Primeira vez?</h1>
@@ -122,7 +122,7 @@
 
       <label>
         <p>Possui cadastro?</p>
-        <button class="btn_login">Clique aqui!</button>
+        <button class="btn_login" onclick="change()">Clique aqui!</button>
       </label>
     </div>
   </main>

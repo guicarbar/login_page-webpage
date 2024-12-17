@@ -107,7 +107,6 @@ main {
 }
 
 main > div {
-  margin: 0 1em;
   padding: 3em 1.5em;
   background-color: var(--colorGray1);
   backdrop-filter: blur(8px);

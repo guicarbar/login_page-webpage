@@ -1,6 +1,6 @@
 /* login css area */
 .login_main {
-  display: flex;
+  margin: 6em 1em;
   flex-flow: column nowrap;
   justify-content: space-between;
   gap: 3em;

@@ -1,22 +1,6 @@
-/* root */
-:root {
-  --color1: #d9ffc8;
-  --color2: #b5dda6;
-  --color3: #92bc83;
-  --color4: #6e9a61;
-  --color5: #4a793e;
-  --colorBlack: #00030c;
-  --colorWhite: #fff;
-  --colorGray1: #cccccc70;
-  --colorGray2: #666;
-  --colorShadow: #00030c70;
-
-  --linearGrad: #d9ffc8, #b5dda6, #92bc83, #6e9a61, #4a793e;
-}
-
 /* create account area */
 .createaccount_main {
-  display: flex;
+  margin: 6em 1em;
   flex-flow: column nowrap;
   justify-content: space-between;
   gap: 3em;
@@ -88,12 +72,51 @@
   justify-content: space-between;
 }
 
+.form_gender_radio > label {
+  font-weight: 700;
+  color: var(--color5);
+}
+
+.form_gender_radio > label > input {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  background-color: transparent;
+  border: 1px solid var(--colorGray2);
+  border-radius: 16px;
+  transition: all .3s ease;
+}
+
+.form_gender_radio > label > input:hover {
+  background-color: var(--colorGray2);
+}
+
+.form_gender_radio > label > input:checked {
+  background-color: var(--color4);
+  outline: 2px solid var(--color4);
+  outline-offset: 3px;
+}
+
 .fomr_nasc_select {
   width: 100%;
   padding: .8em 0em 2.6em;
   display: flex;
   justify-content: center;
   gap: 1em;
+}
+
+.fomr_nasc_select > select {
+  padding: .6em;
+  background-color: var(--color3);
+  border-radius: 16px;
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.fomr_nasc_select > select:focus {
+  outline: 1px solid var(--color5);
+  outline-offset: 3px;
 }
 
 .accountcreate_form_submit {
