@@ -1,6 +1,5 @@
 /* create account area */
 .createaccount_main {
-  margin: 6em 1em;
   flex-flow: column nowrap;
   justify-content: space-between;
   gap: 3em;

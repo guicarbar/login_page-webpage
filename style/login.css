@@ -1,6 +1,5 @@
 /* login css area */
 .login_main {
-  margin: 6em 1em;
   flex-flow: column nowrap;
   justify-content: space-between;
   gap: 3em;
@@ -141,4 +140,12 @@
   background-color: var(--color5);
   color: var(--colorWhite);
   text-decoration: underline;
+}
+
+
+
+@media only screen and (min-width: 768px) {
+  .login_main > div:nth-child(3) > label {
+    display: none;
+  }
 }
