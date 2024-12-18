@@ -17,8 +17,12 @@
 .card_bigScreens {
   display: flex;
   flex-flow: column nowrap;
-  gap: 1em;
+  gap: 1.8em;
   align-items: center;
+}
+
+.card_bigScreens > h1:nth-child(1) {
+  text-align: center;
 }
 
 .card_bigScreens > p:nth-child(2) {

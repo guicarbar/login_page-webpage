@@ -173,9 +173,13 @@ main {
 }
 
 @media only screen and (min-width: 992px) {
-
+  main {
+    margin: 10em 4em;
+  }
 }
 
-@media only screen and (min-width: 1200px) {
-
+@media only screen and (min-width: 1024px) {
+  main {
+    margin: 3em 4em;
+  }
 }
