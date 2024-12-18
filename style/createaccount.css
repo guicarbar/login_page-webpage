@@ -140,3 +140,14 @@
 .password_form_area > input:nth-child(1){
   margin: .8em 0em .6em;
 }
+
+
+@media only screen and (min-width: 768px) {
+  .createaccount_main {
+    width: 70%;
+  }
+
+  .createaccount_main > div {
+    text-align: center;
+  }
+}

@@ -22,11 +22,15 @@ function change() {
   let login = document.getElementById("loginArea")
   let create = document.getElementById("createAccountArea")
 
+  let card = document.getElementById("card_bigScreens")
+
   if (login.style.display == "flex") {
     login.style.display = "none"
     create.style.display = "flex"
+    card.style.display = "none"
   } else {
     login.style.display = "flex"
     create.style.display = "none"
+    card.style.display = "flex"
   }
 }

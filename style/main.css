@@ -160,6 +160,7 @@ main {
 
   main {
     margin: 15em 4em;
+    gap: 2em;
   }
 
   main > div {

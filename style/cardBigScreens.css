@@ -14,4 +14,36 @@
   --linearGrad: #d9ffc8, #b5dda6, #92bc83, #6e9a61, #4a793e;
 }
 
+.card_bigScreens {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1em;
+  align-items: center;
+}
 
+.card_bigScreens > p:nth-child(2) {
+  font-size: 20px;
+  color: var(--colorGray2);
+  font-weight: 700;
+  text-align: center;
+}
+
+.card_bigScreens > p:nth-child(3) {
+  color: var(--colorGray2);
+  text-align: center;
+}
+
+.card_bigScreens > button:nth-child(4) {
+  background-color: transparent;
+  padding: .5em .4em;
+  border: 1px solid transparent;
+  font-size: 20px;
+  color: var(--color5);
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.card_bigScreens > button:nth-child(4):hover {
+  border: 1px solid var(--color5);
+  border-radius: 32px;
+}
