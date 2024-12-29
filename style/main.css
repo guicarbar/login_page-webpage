@@ -154,7 +154,9 @@ main {
 
 @media only screen and (min-width: 768px) {
   .card_bigScreens {
-    display: block;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
     border-radius: 0px 32px 32px 0px;
   }
 
@@ -174,12 +176,12 @@ main {
 
 @media only screen and (min-width: 992px) {
   main {
-    margin: 10em 4em;
+    margin: 4em 10em;
   }
 }
 
 @media only screen and (min-width: 1024px) {
   main {
-    margin: 3em 4em;
+    margin: 8em 15em;
   }
 }
