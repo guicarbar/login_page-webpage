@@ -17,4 +17,4 @@ Projeto de uma tela de login desenvolvida utilizando apenas HTML e CSS puro, sem
 
 ---
 
-> ⚠️ **Observação**: Projetos com o sufixo *`_Website`* são aplicativos desenvolvidos especificamente para a web. 🌐  
+> ⚠️ **Observação**: Projetos com o sufixo *`-Website`* são aplicativos desenvolvidos especificamente para a web. 🌐  
